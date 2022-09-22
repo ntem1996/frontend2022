@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Pagina 1: Upcoming releases
-  <img src="readme-images/smallscreen1.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/smallscreen1.png" width="375px" alt="upcoming releases">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Pagina 2: Concepts
-  <img src="readme-images/smallscreen2.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/smallscreen2.png" width="375px" alt="concept sneakers">
  
 </details>
 
@@ -59,27 +59,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+- Links van verschillende webshops zeggen alleen ‘buy now’ ipv ‘buy now webshop name’
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+- Main menu (onder hamburger menu werkt niet) 
 
+- Hij gaat volledige artikelen voorlezen als je alleen een artikel selecteert. 
+
+ Hoe kan dit verholpen worden?
+ - Beschrijving van titels/links compleet maken (a= href)
+
+- Kortere titels
+
+- Menu onder hamburger menu compleet maken zodat het werkt
+
+- Minder beschrijving bij artikelen? (later nog checken wat dit probleem veroorzaakt)
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ Werkt goed. 
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Kleine linkjes zijn niet makkelijk klikbaar met spasmes. 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Website is voornamelijk zwart wit,  dus geen last van zwart wit
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Hemianopia - geen effect op de website
+  Glaucoma - gewoong een laptop gebruiken
+  Low contrast - met low contrast is de super dunnen tekst bijna niet te lezen zonder goed te focussen
+  Diabetic eye disease - heel vervelend maar website blijft wel bruikbaar 
+  Cataract - gewoon geen webiste bezoeken 
+  Central Field loss - vervelend en misschien nav bar niet pal in het midden en inloggen aan de zijkant. 
 
 </details>
 
