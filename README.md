@@ -8,8 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
@@ -88,8 +86,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Website is voornamelijk zwart wit,  dus geen last van zwart wit
 
   Hemianopia - geen effect op de website
-  Glaucoma - gewoong een laptop gebruiken
-  Low contrast - met low contrast is de super dunnen tekst bijna niet te lezen zonder goed te focussen
+  Glaucoma - gewoon geen laptop gebruiken
+  Low contrast - met low contrast is de super dunne tekst bijna niet te lezen zonder goed te focussen
   Diabetic eye disease - heel vervelend maar website blijft wel bruikbaar 
   Cataract - gewoon geen webiste bezoeken 
   Central Field loss - vervelend en misschien nav bar niet pal in het midden en inloggen aan de zijkant. 
@@ -124,17 +122,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Het ging verrassend goed. wel wat vragen over css selectoren.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Nensi          | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | css selectoren | en dit             | en ik dit    | en dan ik dat    |
+  |                | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |                | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -146,8 +144,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - ...
 
 </details>
-
-
 
 
 
@@ -249,7 +245,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - ...
 
 </details>
-
 
 
 

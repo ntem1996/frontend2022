@@ -18,6 +18,7 @@ button, summary {
 :root {
 	/* startje */
 	--color-text:#111;
+	--color-text-white:#fff;
 	--color-background:#fff;
 }
 
@@ -29,35 +30,165 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 
+/* groter dan teken (>) selecteerd direct en het enige kind en dus geen achterkleinkinderen. zonder haakje selecteerd alle (bijvoorbeeld) a elementen in een parent. */
+
 /* jouw code */
 
 body {
   color:var(--color-text);
   background-color:var(--color-background);
+  margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
 
 nav {
-	display: grid;
-	gap: 10em;
 	background-color:var(--color-background);
 
 }
 
-/* css voor de bovenste header/menu? */
+/**********************/
+/* BOVENSTE HEADERMENU*/
+/**********************/
 
-ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1em;
+header {
+
 }
 
-ul > li:nth-of-type(2) {
+header nav:nth-of-type(1) {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1em;
+align-items: center;
+margin: 1em 1em 1em 1em;
+}
+
+
+
+/* tweede menu, binnen de button */
+
+
+header nav:nth-of-type(2) {
+
+	align-content: start;
+	gap: 1em;
+	background-color: var(--color-background);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	transform: translateX(100%);
+	transition: 1s;
+	z-index: 100;
+	margin: 0;
+	overflow: scroll;
+
+} 
+
+/* de class die toegevoegd word door de javascript. */
+
+header nav.open {
+transform: translateX(0);
+transition: 1s;
+}
+
+/* hier eindigt de code van de 'beweging' */
+
+header nav header {
+	
+	background-color: none;
+
+}
+
+header nav header section {
+display: flex;
+background-color: var(--color-text);
+padding: 1em;
+align-items: center;
+justify-content: center;
+margin: 0;
+
+}
+
+/* css voor beide ul's in de navigatiebar */
+
+header nav:nth-of-type(2) ul {
+font-weight: bolder;
+}
+
+ /* css voor beide ul's in de navigatiebar */
+
+ /* css voor eerste UL */
+
+header nav:nth-of-type(2) ul:nth-of-type(1) {
+	padding: 1em;
+
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(1) li {
+border-bottom: 3px solid lightgray;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+ /* css voor eerste UL */
+
+  /* css voor tweede UL */
+
+header nav:nth-of-type(2) ul:nth-of-type(2) {
+
+
+}
+
+  /* css voor tweede UL */
+
+
+header nav:nth-of-type(2) header button {
+	background: none;
+	border: none;
+}
+
+
+header nav:nth-of-type(2) ul li a {
+	color: var(--color-text);
+	text-decoration: none;
+	width: 100%;
+
+
+}
+
+/* mocht van sanne, bron is a11y-guidelines */
+
+header nav h1.visually-hidden {
+	position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+
+}
+
+/* ^ deze class mocht van sanne */
+
+nav > section:nth-of-type(2) {
 	justify-self: center;
 }
 
-ul > li:nth-of-type(3) {
+nav > section:nth-of-type(3) {
 	justify-self: end;
+}
+
+header nav section button {
+	border: none;
+	background: none;
 }
 
 li {
@@ -65,24 +196,125 @@ li {
 }
 
 
-li > a > img {
+header nav section > a > img {
 	max-width: 2em;
 }
 
-main > section > a > img {
-	width: 100%;
-	height: 20em;
-	object-fit: cover;
-}
 
-section:nth-of-type(1) {
+
+section nav:nth-of-type(1) {
 	display: grid;
+	
 }
 
-article > a > img {
+/* tweede header soort menu slider tab ding */
+
+section nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+
+}
+
+section nav a {
+	color: black;
+	font-size: 0.8em;
+	font-weight: 900;
+
+}
+
+section nav section:nth-of-type(1) {
+	place-self: center;
+}
+section nav section:nth-of-type(2) {
+	place-self: center;
+}
+section nav section:nth-of-type(3) {
+	place-self: center;
+}
+
+
+/* code om de tekst op de eerste afbeelding te krijgen */
+
+
+main > section > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	background-color: black;
+	
+	
+}
+
+
+
+main > section > a > div {
+	
+	position: absolute;
+	justify-self: center;
+	text-align: center;
+	color: var(--color-text-white);
+	z-index: 50;
+	
+
+}
+
+main > section > a > div h2 {
+	
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: none;
+
+
+}
+
+main > section > a > div p {
+	text-transform: capitalize;
+	font-weight: lighter;
+	font-size: 0.7em;
+
+}
+
+main > section > a > img:only-of-type {
+	width: 100%;
+	height: 10em;
+	object-fit: cover;
+	opacity: 0.6;
+
+
+}
+
+/* code om images responsive te maken die in een section zitten */
+
+section > ul > li > a > img {
 	width: 100%;
 	height: auto;
 }
+
+/* code om de verschillende releases te stylen */
+section > ul {
+	margin: none;
+	padding-left: 0px;
+} 
+
+section ul a {
+	display: grid;
+	color: var(--color-text);
+}
+
+section ul li a h3 {
+	padding: 0 1em 1em 1em;
+}
+/* deze regels hierbeneden zorgen dat de h3 onder de afbeelding staat. */
+
+section ul a img {
+	grid-row-start: 1;
+}
+
 
 /* code voor de footer */
 
