@@ -67,7 +67,15 @@ margin: 1em 1em 1em 1em;
 
 
 
+/*********************************/
+/*			     				 */
 /* tweede menu, binnen de button */
+/*								 */
+/*********************************/
+
+
+
+/* */
 
 
 header nav:nth-of-type(2) {
@@ -160,6 +168,17 @@ header nav:nth-of-type(2) ul li a {
 
 }
 
+
+
+/***************************************/
+/*			     					   */
+/* einde tweede menu, binnen de button */
+/*									   */
+/***************************************/
+
+
+
+
 /* mocht van sanne, bron is a11y-guidelines */
 
 header nav h1.visually-hidden {
@@ -175,8 +194,9 @@ header nav h1.visually-hidden {
 	border: 0 !important;
 
 }
-
 /* ^ deze class mocht van sanne */
+
+
 
 nav > section:nth-of-type(2) {
 	justify-self: center;
@@ -235,6 +255,48 @@ section nav section:nth-of-type(2) {
 section nav section:nth-of-type(3) {
 	place-self: center;
 }
+
+
+
+/* css voor de filter knop */
+
+main > section:nth-of-type(2) { 
+	display: flex;
+	position: fixed;
+	padding: 0.5em;
+	background-color: var(--color-text);
+	align-items: center;
+	bottom: 0;
+	left: 25%;
+	right: 25%;
+	border-radius: 1em 1em 0 0;
+
+}
+
+main > section:nth-of-type(2) > button,
+main > section:nth-of-type(2) > p  
+{
+	background: none;
+	border: none;
+	color: white;
+	flex-grow: 4;
+	align-self: center;
+	gap: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+
+}
+
+main section.filterOpen {
+	background-color: pink;
+	transition: 1s;
+	bottom: 0;
+	top: 50%;
+	
+
+}
+
 
 
 /* code om de tekst op de eerste afbeelding te krijgen */
