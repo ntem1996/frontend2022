@@ -22,14 +22,24 @@ function menuSluiten () {
 
 // knop voor filteren openen 
 
-var filterOpenKnop = document.querySelector("main section:nth-of-type(2)");
+var filterOpenKnop = document.querySelector("main nav > section");
 
 filterOpenKnop.addEventListener("click", filterOpenen);
 
 function filterOpenen () {
-    var filter = document.querySelector("main section:nth-of-type(2)");
+//    voegt class toe aan eerste deel van de filter (de knop dus)
+    var filter = document.querySelector("main > nav > section:nth-of-type(1)");
     filter.classList.toggle("filterOpen");
+
+
+    // voegt class toe aan het lijst gedeelte van de filter
+    var filter = document.querySelector("main > nav > section:nth-of-type(2)");
+    filter.classList.toggle("filterOpen");
+
+ 
 }
+
+
 
 
 

@@ -1,0 +1,16 @@
+/* mijn code begint hier, dit is de css file voor de tweede pagina */
+
+section {
+    display: grid;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+
+img:nth-of-type(1) {
+    width: 100%;
+    height: auto;
+    grid-row-start: 1; 
+}

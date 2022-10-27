@@ -1,0 +1,233 @@
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* groter dan teken (>) selecteerd direct en het enige kind en dus geen achterkleinkinderen. zonder haakje selecteerd alle (bijvoorbeeld) a elementen in een parent. */
+
+
+
+/* tweede header soort menu slider tab ding */
+main > section:nth-of-type(2) {
+	position: relative;
+
+}
+
+main > section:nth-of-type(2) nav {
+	position: sticky;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	top: 0em;
+
+}
+
+main > section:nth-of-type(2) nav a {
+	color: black;
+	font-size: 1em;
+	font-weight: 900;
+	justify-self: center;
+	
+
+}
+
+
+
+main > section:nth-of-type(2) div {
+	display:flex;
+	overflow-x:hidden;
+	scroll-padding-top: 3em;
+
+}
+
+main > section:nth-of-type(2) div section {
+	width:100%;
+	flex-shrink:0;
+	padding: 0;
+}
+
+main > section:nth-of-type(2) div ul {
+	height: 60em;
+	overflow-y: scroll;
+
+
+}
+
+main > section:nth-of-type(2) div ul img {
+	width:100%;
+}
+
+
+
+
+
+
+/* css voor de filter knop */
+
+main > nav > section:nth-of-type(2) {
+
+	position: fixed;
+	top: 100%;
+	right: 10%;
+	left: 10%;
+	z-index:100;
+
+
+}
+
+main > nav > section:nth-of-type(1) { 
+	display: flex;
+	position: fixed;
+	padding: 0.5em;
+	background-color: var(--color-text);
+	align-items: center;
+	bottom: 0;
+	left: 25%;
+	right: 25%;
+	border-radius: 1em 1em 0 0;
+	color: white;
+	align-self: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+	gap: 2em;
+	z-index:100;
+}
+
+main > nav > section:nth-of-type(1) > button {
+	background: none;
+	border: none;
+	z-index:100;
+	filter: invert(1);
+}
+
+/* css voor de ul section zonder class teogevoegd */
+
+
+
+main > nav > section:nth-of-type(1).filterOpen {
+	background-color: var(--color-text);
+	transition: 1s;
+	bottom: 30%;
+	right: 25%;
+	left: 25%;
+	width: 50%;
+	color: var(--color-text-white);
+	border: none;
+	gap: 2em;
+
+}
+
+
+main > nav > section:nth-of-type(2).filterOpen {
+	margin: 0;
+	background-color: var(--color-text);
+	position: fixed;
+	padding: 1em;
+	line-height: 1.5em;
+	transition: 1s;
+	bottom: 0;
+	right: 10%;
+	left: 10%;
+	width: 80%;
+	top: 70%;
+	border-radius: 1em 1em 0 0;
+	color: var(--color-text-white);
+	border: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	text-align: center;
+
+}
+
+
+/* code om de tekst op de eerste afbeelding te krijgen */
+
+
+main > section:nth-of-type(1) > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	background-color: black;
+	
+	
+}
+
+
+
+main > section:nth-of-type(1) > a > div {
+	
+	position: absolute;
+	justify-self: center;
+	text-align: center;
+	color: var(--color-text-white);
+	z-index: 50;
+	
+
+}
+
+main > section:nth-of-type(1) > a > div h2 {
+	
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: none;
+
+
+}
+
+main > section:nth-of-type(1) > a > div p {
+	text-transform: capitalize;
+	font-weight: lighter;
+	font-size: 0.7em;
+
+}
+
+main > section:nth-of-type(1) > a > img:only-of-type {
+	width: 100%;
+	height: 10em;
+	object-fit: cover;
+	opacity: 0.6;
+
+
+}
+
+
+/* code om images responsive te maken die in een section zitten */
+
+section > ul > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+/* code om de verschillende releases te stylen */
+section > ul {
+	margin: 0;
+	padding:0;
+} 
+
+section ul a {
+	display: grid;
+	color: var(--color-text);
+}
+
+section ul li a h3 {
+	padding: 0 1em 1em 1em;
+}
+/* deze regels hierbeneden zorgen dat de h3 onder de afbeelding staat. */
+
+section ul a img {
+	grid-row-start: 1;
+}
+
+
+
+
+
+
