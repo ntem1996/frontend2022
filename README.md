@@ -20,7 +20,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   blauw
 
   #### Je focus:
-  responsive
+  responsive <- dit werd toch surface plane
  
 </details>
 
@@ -41,7 +41,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/smallscreen1.png" width="375px" alt="upcoming releases">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Pagina 2: Concepts
+  Pagina 2: Concepts < - dit werd toch drie verschillende 'pagina's' op de eerste pagina en een article
   <img src="readme-images/smallscreen2.png" width="375px" alt="concept sneakers">
  
 </details>
@@ -57,27 +57,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-- Links van verschillende webshops zeggen alleen ‘buy now’ ipv ‘buy now webshop name’
+  - Links van verschillende webshops zeggen alleen ‘buy now’ ipv ‘buy now webshop name’
 
-- Main menu (onder hamburger menu werkt niet) 
+  - Main menu (onder hamburger menu werkt niet) 
 
-- Hij gaat volledige artikelen voorlezen als je alleen een artikel selecteert. 
+  - Hij gaat volledige artikelen voorlezen als je alleen een artikel selecteert. 
 
  Hoe kan dit verholpen worden?
- - Beschrijving van titels/links compleet maken (a= href)
+  - Beschrijving van titels/links compleet maken (a= href)
 
-- Kortere titels
+  - Kortere titels
 
-- Menu onder hamburger menu compleet maken zodat het werkt
+  - Menu onder hamburger menu compleet maken zodat het werkt
 
-- Minder beschrijving bij artikelen? (later nog checken wat dit probleem veroorzaakt)
+  - Minder beschrijving bij artikelen? (later nog checken wat dit probleem veroorzaakt)
 
   #### Muis en Toetsenbord 
- Werkt goed. 
+  Werkt goed. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
   Kleine linkjes zijn niet makkelijk klikbaar met spasmes. 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
@@ -102,13 +102,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-volledige-pagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-schets-pagina2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filter.breakdown.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
@@ -183,31 +184,55 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Screenreader gaat eerst door menu heen - inert java toevoegen. 
+  Afbeeldingen een alt geven 
+  Aria-label toevoegen voor de knoppen 
+  Soms als je tabt dan krijg ik een soort van dubbel scherm. Ik zie dan 2 halve afbeeldingen naast elkaar. (dit is door de code van sanne)
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Door de website tabben is mogelijk. 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Elastiekjes
+  Website is vergeving gezind. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Schocks 
+  Door geen gebruik te maken van te kleine klik areas is het niet te lastig te gebruiken met spasmes
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Blur/glare cataract 
+  ettertype is niet te lezen. Contrast is wel te zien. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Low contrast 
+  Website is goed te gebruiken. 
 
+  Hemifield loss 
+  Website is volledig te gebruiken. Kost misschien iets meer moeite om te focussen. 
+
+  Central field loss
+  Website is niet goed te gebruiken. Ik zie alleen maar zwarte vlekken. 
+
+  Combined loss
+  Website is goed te gebruiken met deze oog afwijking. 
+
+  Color 0779p
+  Website is volledig te gebruiken. Aangezien de website zwart-wit is blijf je het contrast wel duidelijk zien. 
+
+  Glaucoma/rp 
+  De website is niet zo goed te gebruiken. Je hebt veel content al in het midden geplaatst. Het menu aan rechterkant is niet te zien.  
+
+  Blured vision 
+  Website is redelijk te gebruiken, je moet goed focussen. Het beeld is wazig naar omdat de website ruimtelijk is opgezet blijft de website te gebruiken. 
+
+  Protanopia / deuteranopia 
+  Aangezien de website voornamelijk zwart/wit is blijft het contrast het zelfde. De kleuren van de afbeeldingen veranderen maar deze blijven duidelijk. 
+
+  Tritanopia / achromatopsia
+  De kleuren van de layout van de website blijven het zelfde aangezien deze zwart/wit it. De kleuren van de afbeeldingen veranderen maar deze blijven duidelijk.
 </details>
 
 
@@ -250,19 +275,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/homepage.zoekbalk.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat verbazingwekkend goed ging was het begrijpen van CSS selectoren, voorheen had ik geen idee hoe ik iets moest stylen zonder classes te gebruiken. Nu snap ik hoe ik moet kijken naar de HTML om css selectoren te gebruiken. Tevens is het gebruik van javascript ook heel goed gegaan. Ik snap de basis nu aangezien ik nu dingen zelf kan toevoegen zonder te huilen haha 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/css.selectoren.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik besloot last minute nog een zoekbalk toe te voegen die verschijnt, alleen lukte het me niet goed om deze volledig responsive te maken vanwege tijdsnood. 
+  
+  <img src="readme-images/zoekbalk.niet.schaalbaar.png" width="375px" alt="bummer">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  ### Random img van m'n voortgang....
+  <img src="readme-images/filterknop.png" width="375px" alt="random img van filter knop?">
+
 </details>
 
 
