@@ -3,7 +3,7 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -24,6 +24,8 @@ button, summary {
 	--color-text:#111;
 	--color-text-white:#fff;
 	--color-background:#fff;
+	--accent-color: #71c2b2;
+	--accent-color-button: #8555c9;
 }
 
 
@@ -47,19 +49,25 @@ body {
 /* BOVENSTE HEADERMENU*/
 /**********************/
 
+
 header {
-}
+	margin: 0;
+	padding: 0;
 
-header nav:nth-of-type(1) {
-
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 1em;
-align-items: center;
-margin: 1em 1em 1em 1em;
 
 
 }
+
+header nav:nth-of-type(1) ul{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	align-items: center;
+	padding: 1em;
+	margin:0;
+
+} 
 
 
 
@@ -74,7 +82,7 @@ main {
 	transition: transform 0.2s;
 }
 
-/* */
+
 
 
 header nav:nth-of-type(2) {
@@ -86,7 +94,7 @@ header nav:nth-of-type(2) {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 50%;
+	width: 70%;
 	transform: translateX(100%);
 	transition: 1s;
 	z-index: 100;
@@ -98,74 +106,172 @@ header nav:nth-of-type(2) {
 /* de class die toegevoegd word door de javascript. */
 
 header nav.open {
-transform: translateX(0);
-transition: 1s;
+	transform: translateX(0);
+	transition: 1s;
 
 }
+
+/* de achtergrond wanneer het menu opent */
+
+header div {
+	transition: 1s;
+	position: fixed;
+	inset: 0;
+	z-index: 75;
+	pointer-events: none;
+}
+
+header div.open {
+	
+	background-color: rgb(0 0 0 / .5);
+
+	
+}
+
 
 /* hier eindigt de code van de 'beweging' */
 
-header nav header {
+header nav:nth-of-type(2) header {
 	
-	background-color: none;
+	background-color: var(--color-text);
+
 
 }
 
-header nav header section {
-display: flex;
-background-color: var(--color-text);
-padding: 1em;
-align-items: center;
-justify-content: center;
-margin: 0;
+
+header nav:nth-of-type(2) header ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
 
 }
 
-/* css voor beide ul's in de navigatiebar */
-
-header nav:nth-of-type(2) ul {
-font-weight: bolder;
-}
-
- /* css voor beide ul's in de navigatiebar */
-
- /* css voor eerste UL */
-
-header nav:nth-of-type(2) ul:nth-of-type(1) {
+header nav:nth-of-type(2) header ul li {
+	align-self: center;
 	padding: 1em;
-
+	gap: 2em;
 }
-
-header nav:nth-of-type(2) ul:nth-of-type(1) li {
-border-bottom: 3px solid lightgray;
-padding-top: 1em;
-padding-bottom: 1em;
-}
-
 
 header nav:nth-of-type(2) header button {
 	background: none;
 	border: none;
+	filter: invert(1);
+}
+
+/* css voor beide ul's in de navigatiebar */
+
+header nav:nth-of-type(2) > ul:nth-of-type(1) {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	margin: 1em;
+	padding: 0;
+	gap: .5em;
+	justify-content: space-around;
+	border-bottom: 3px solid #e9e9e9;
+	padding-bottom: 1.5em;
+
 }
 
 
-header nav:nth-of-type(2) ul li a {
+header nav:nth-of-type(2) > ul:nth-of-type(1) > li:nth-of-type(1){
+	width: 100%;
+	font-weight: bolder;
+	
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(1) li a img {
+	width: 2.5em;
+	
+}
+
+
+
+header nav:nth-of-type(2) ul:nth-of-type(2) {
+	font-weight: bolder;
+	padding: 1em;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li {
+	border-bottom: 3px solid #e9e9e9;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li a:hover {
+	color: var(--accent-color);
+}
+
+
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) {
+	padding-top: 0;
+}
+
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) button {
+	padding: 1.2em;
+	background-color: var(--accent-color);
+	width:100%;
+	margin-top: 1em;
+	border: none;
+	color: var(--color-text-white);
+	font-weight: 800;
+	text-transform: uppercase;
+
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) button:hover {
+	background-color: var(--accent-color-button);
+	transition: 1s;
+}
+
+
+header nav:nth-of-type(2) ul:nth-of-type(2) li a {
 	color: var(--color-text);
 	text-decoration: none;
 	width: 100%;
 
+}
+
+header nav:nth-of-type(2) ul:nth-of-type(3) {
+	padding: 1em;
+	margin-top: 0;
 
 }
 
-nav > section:nth-of-type(2) {
+
+header nav:nth-of-type(2) ul:nth-of-type(3) li {
+	padding: 0.2em;
+
+}
+
+
+header nav:nth-of-type(2) ul:nth-of-type(3) li a {
+	color: #252525;
+	font-weight: bold;
+	font-size: 0.8em;
+
+}
+
+nav > ul > li:nth-of-type(2) {
 	justify-self: center;
 }
 
-nav > section:nth-of-type(3) {
+nav > ul li:nth-of-type(3) {
 	justify-self: end;
 }
 
-header nav section button {
+header nav ul li button {
 	border: none;
 	background: none;
 }
@@ -175,19 +281,19 @@ li {
 }
 
 
-header nav section > a > img {
+header nav ul li > a > img {
 	max-width: 2em;
 }
 
 
 
-section nav:nth-of-type(1) {
+nav:nth-of-type(1) ul {
 	display: grid;
 	
 }
 
 
-header nav h1.visually-hidden {
+.visually-hidden {
 	position: absolute;
 	position: absolute !important;
 	width: 1px !important;
@@ -203,6 +309,93 @@ header nav h1.visually-hidden {
 
 /* ^ deze class mocht van sanne */
 
+
+/* CSS VOOR DE SEARCH BAR */
+
+header section:nth-of-type(1) {
+	display: none;
+}
+
+header section:nth-of-type(1).zoekBalk {
+	
+	position: absolute;
+	z-index: 200;
+	top: 2%;
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	width: 100%;
+	margin-left: .5em;
+
+}
+
+header section:nth-of-type(1).zoekBalk form {
+	width: 100%;
+	
+}
+
+header section:nth-of-type(1).zoekBalk form label {
+	width: 100%;
+	
+}
+
+header section:nth-of-type(1).zoekBalk form input {
+	min-width: 95%;
+	padding: 1em;
+	border: none;
+}
+
+/* knop om search door te zetten */
+
+header section:nth-of-type(1) ul {
+	position: absolute;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	margin-top: .6em;
+	margin-left: 18em;
+
+	
+}
+
+
+
+header section:nth-of-type(1) a:nth-of-type(1) {
+	max-width: 1em;
+
+	
+}
+
+header section:nth-of-type(1) a:nth-of-type(1) img {
+	max-width: 1em;
+
+}
+
+/* knop om search te sluiten */
+
+header section:nth-of-type(1) button {
+	background: none;
+	border: none;
+	max-width: 2em;
+
+
+}
+
+
+header section:nth-of-type(1) button img {
+
+	max-width: 2em;
+
+
+}
+
+/* code om de ul iets donkerder te maken */
+
+header nav:nth-of-type(1) ul.zoekBalk {
+	background-color: rgba(0, 0, 0, 0.5); 
+	
+
+}
 
 /* code voor de footer */
 

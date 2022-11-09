@@ -128,20 +128,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Nensi          | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | css selectoren | en dit             | en ik dit    | en dan ik dat    |
-  |                | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |                | ...                | ...          | ...              |
+  | Nensi          | Lichelle           | Syarah            | Linsey           |
+  | ---            | ---                | ---               | ---              |
+  | css selectoren | Breakdown schets   | Breakdown schets  | afwezig          |
+  |                |                    | Basic HTML vragen |                  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - paar punten in mn html veranderen, niet alles is een section, paar articles weghalen. 
-  - punt 2
-  - nog een punt
-  - ...
+  - aria hidden besproken --> h1 is niet zichtbaar voor de lezer maar wel voor de screenreader
+  - breakdown schetsen bespreken en aanpassen
+  - CSS selectoren besproken, duidelijkheid over hoe bepaalde dingen beter kunnen
 
 </details>
 
@@ -159,19 +157,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        | student 4        |
+  | Nensi          | Lichelle           | Syarah       | Cesar            | Linsey           |
   | ---            | ---                | ---          | ---              | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              | ...              |
+  | Menu styling   | geen vragen        | Css Styling  | Lettertype       | Geen vragen      |
+  | filter knop    |                    |              |                  |                  |
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - HMTL wat meer aandacht geven dmv alt teksten etc
-  - H2's toevoegen aan alle sections :(
-- ...
+  - H2's toevoegen aan alle sections :( of sections vervangen
+
 
 </details>
 
@@ -228,20 +226,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Nensi                 | Lichelle                   | Syarah            | Cesar                    |
+  | ---                   | ---                        | ---               | ---                      |
+  | Scrollen op homepage  | Side menu en detail pagina | CSS styling menu  | HTML en dropdown list    |
+  |                       |                            | detail pagina     |                          |
+ 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - vraag aan sanne, hoe de scroll moet, sanne heeft dit opgelost en heb ik later in mijn eigen code geimplementeerd.
+ 
 
 </details>
 
@@ -280,8 +276,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  2. https://css-tricks.com/snippets/css/complete-guide-grid/
+  3. Sanne&Jeffrey's kennisbank
+  4. Verschillende bronnen zoals MDN webdocs
 
 </details>

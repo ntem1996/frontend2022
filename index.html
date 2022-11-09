@@ -12,6 +12,11 @@
 	<link href="styles/main.css" rel="stylesheet">	
 	<link href="styles/paginaeen.css" rel="stylesheet">
 
+	<!-- font inladen -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+	</style>
+
 	<link rel="icon" type="image/svg+xml" href="images/houseofheat.logo.webp">
 </head>
 
@@ -19,25 +24,67 @@
 	<header>
 		<nav>
 				<h1 class="visually-hidden">House of Heat</h1>
-				<section><a href="#"><img src="images/search.icon.2.png" alt="zoekbalk icoon"></a></section>
-				<section><a href="#"><img src="images/houseofheat.logo.webp"></a></section>
-				<section><button aria-label="mainmenu" type="button"><img src="images/hamburgermenu.icon.png"></button></section>
+				<ul>
+					<li><a href="#"><img src="images/search.icon.2.png" alt="zoekbalk icoon"></a></li>
+					<li><a href="index.html"><img src="images/houseofheat.logo.webp" alt="logo van House of Heat"></a></li>
+					<li><button aria-label="mainmenu" type="button" ><img src="images/hamburgermenu.icon.png"></button></li>
+				</ul>
 		</nav>
+
+		
+
+		<div>
+		</div>
+
+		<!-- ff mn idee opschrijve hoor, H2 met een background oh wacht form  -->
+		<section>
+			<h2 class="visually-hidden">Search</h2>
+
+			<form>
+				<label for="searchBar"></label>
+				<input type="text" placeholder="Search">
+			</form>
+			<ul>
+				<li><a><img src="images/search.icon.2.png" alt="Press to Search"></a></li>	
+				<li><button aria-label="close search button" type="button"><img src="images/close.button.png" alt="Close Search bar"></button></li>	
+			</ul>
+		</section>
 
 		<nav>
 			<header>
-				<section><a href="#"><img src="images/houseofheat.logo.wit.webp"></a></section>
-				<button aria-hidden="true" type="button"><img src="images/hamburgermenu.icon.png"></button>
-				<!-- button hierboven moet nog veranderd worden^^ -->
+				<ul>	
+					<li>
+						<a href="#">
+						<img src="images/houseofheat.logo.wit.webp">
+						</a>
+					</li>
+					
+					<li>
+						<button aria-label="Close Menu" type="button">
+							<img src="images/close.button.png">
+						</button>
+					</li>	
+				</ul>
 			</header>
+			
 			<ul>
-				<li><a href="#">Follow us</a></li>
-				<li><a href="#">Get it straigt to your inbox</a></li>
-				<li><a href="#">Brands</a></li>
+				<li><p>Follow us</p></li>
+				<li><a href="#"><img src="images/facebook.icon.svg" alt="Facebook Link"> </a></li>
+				<li><a href="#"><img src="images/instagram.icon.svg" alt="Instagram Link"> </a></li>
+				<li><a href="#"><img src="images/snapchat.icon.svg" alt="Snapchat Link"> </a></li>
+				<li><a href="#"><img src="images/twitter.icon.svg" alt="Twitter Link"> </a></li>
+			</ul>
+			
+			<ul>
+				<li>
+					<a href="#">Get it straigt to your inbox</a>
+					<button>Subscribe in one click</button>
+				</li>
+				<li><a href="article.html">Brands</a></li>
 				<li><a href="#">Sneaker release dates</a></li>
 				<li><a href="#">Jordan release dates</a></li>
 				<li><a href="#">YEEZY release dates</a></li>
-				<li><a href="#">concepts</a></li>
+				<li><a href="#">Concepts</a></li>
 				<li><a href="#">Featured</a></li>
 			</ul>
 			<ul>
@@ -50,6 +97,7 @@
 				<li><a href="#">Staff</a></li>
 			</ul>
 		</nav>
+	
 	</header>
 	
 	
@@ -105,7 +153,7 @@
 				<section id="tab1">
 					<ul>
 						<li>
-							<a href="#">
+							<a href="article.html">
 								<!-- h3 hier als eerst zodat het fijn is voor mensen die met voice narrator werken -->
 								<h3>Jarritos x Nike SB Dunk Low Coming in 2023</h3>
 								<img src="images/jarritos-nike-sb-dunk-low-release-date-2023.jpg">
@@ -127,6 +175,8 @@
 						</li>
 					</ul>
 				</section>
+
+
 			<!-- tab 2 -->
 				<section id="tab2">
 					<ul >
@@ -153,57 +203,98 @@
 						</li>
 					</ul>
 				</section>
+
+
 		
 			<!-- tab 3 -->
 				<section id="tab3">
 					<header>
 						<button aria-label="see all releases" type="button">see all releases</button>
 						<h2>upcoming releases</h2>
-						<hr>
 					</header>
 				
-					<ul >
-				
-						
+					<ul>
 		
-				
-					<li>
-						<p>October 27, 2022</p>
-						<a href="#">
-							<!-- h3 hier als eerst zodat het fijn is voor mensen die met voice narrator werken -->
-							<h3>Air Jordan 1 High OG "Starfish"</h3>
-							<p>Color Starfish/Sail-Black</p>
-							<p>Style Code: DO9369-101</p>
-							<img src="images/jarritos-nike-sb-dunk-low-release-date-2023.jpg">
-						</a>
+						<li>
+							<section>
+								<p>October 27, 2022</p>
+								<a href="#">
+									<!-- h3 hier als eerst zodat het fijn is voor mensen die met voice narrator werken -->
+									<div>
+										<h3>Air Jordan 1 High OG "Starfish"</h3>
+										<p>Color Starfish/Sail-Black</p>
+										<p>Style Code: DO9369-101</p>
+										<img src="images/womens-air-jordan-1-high-og-starfish-do9369-101-release-date-1-640x400.jpeg">
+									</div>
+								</a>
+							</section>
 
-						<p>Where to buy:</p>
+							<p>Where to buy:</p>
+						
+							<button aria-label="nike store" type="button"><img src="images/jordan-min.png">@10am ET</button>
+							<button aria-label="Finish Line store" type="button"><img src="images/finish-line.png">@10am ET</button>
+							<button aria-label="JD store" type="button"><img src="images/jd-min.png">@10am ET</button>
+							<button aria-label="DTLR" type="button"><img src="images/DTLR.png">@10am ET</button>
+							<button aria-label="Add to calendar" type="button">Add to calendar</button>
 
+						</li>
 
-					</li>
+						<li>
+							<section>
+								<p>October 27, 2022</p>
+								<a href="#">
+									<!-- h3 hier als eerst zodat het fijn is voor mensen die met voice narrator werken -->
+									<div>
+									<h3>Neckface x Nike SB Dunk Low</h3>
+									<p>Color: Black/White-Multi Color</p>
+									<p>Style Code: DQ4488-001</p>
+									<img src="images/neckface-nike-sb-dunk-low.jpeg">
+									</div>
+								</a>
+							</section>	
 
-					<li>
-						<a href="#">
-							<h3>Travis Scott x Air Jordan 1 Low OG "Olive" Coming Spring 2023</h3>
-							<img src="images/travis-scott-air-jordan-1-low-og-olive.jpg">
-						</a>
-					</li>
+							<p>Where to buy:</p>
+						
+							<button aria-label="nike store" type="button"> <img src="images/jordan-min.png">@10am ET</button>
+							<button aria-label="Finish Line store" type="button"><img src="images/finish-line.png">@10am ET</button>
+							<button aria-label="JD store" type="button"><img src="images/jd-min.png">@10am ET</button>
+							<button aria-label="DTLR" type="button"><img src="images/DTLR.png">@10am ET</button>
+							<button aria-label="Add to calendar" type="button">Add to calendar</button>
 
-					<li>
-						<a href="#">
-							<h3>Black Panther x Adidas collection Coming Soon</h3>
-							<img src="images/marvel-black-panther-adidas-collection-release-date.jpg">
-						</a>
-					</li>
-				</ul>
+						</li>
+
+						<li>
+							<section>
+							<p>October 27, 2022</p>
+								<a href="#">
+								<!-- h3 hier als eerst zodat het fijn is voor mensen die met voice narrator werken -->
+								<div>
+								<h3>New Balance 990v1 Made In USA</h3>
+								<p>Color: N/A</p>
+								<p>Style Code: M990WG1</p>
+								<img src="images/new-balance-990v1-made-in-usa-m990wg1-release-date-1-640x400.jpg">
+							</div>
+								</a>
+							</section>		
+
+							<p>Where to buy:</p>
+						
+							<button aria-label="nike store" type="button"><img src="images/jordan-min.png">@10am ET</button>
+							<button aria-label="Finish Line store" type="button"><img src="images/finish-line.png">@10am ET</button>
+							<button aria-label="JD store" type="button"><img src="images/jd-min.png">@10am ET</button>
+							<button aria-label="DTLR" type="button"><img src="images/DTLR.png">@10am ET</button>
+							<button aria-label="Add to calendar" type="button">Add to calendar</button>
+
+						</li>
+					</ul>
 			</div>
-		</section>
 		</section>
 
 	</main>
 
 	<footer>
-		<a href="#"><img src="images/houseofheat.logo.wit.webp" alt="Logo House of heat"></a>
+		<a href="#">
+			<img src="images/houseofheat.logo.wit.webp" alt="Logo House of heat"></a>
 		<p> &copy; 2022 House of Heat. All Rights Reserved.</p>
 	</footer>
 	

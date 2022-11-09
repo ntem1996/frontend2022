@@ -1,6 +1,18 @@
 /* mijn code begint hier, dit is de css file voor de tweede pagina */
 
-section {
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-text-white:#fff;
+	--color-background:#fff;
+	--accent-color: #71c2b2;
+    --accent-color-button: #8555c9;
+    --color-button-grijs: #c9c9c9;
+    --background-color-grijs: #aeaeaf;
+}
+
+
+section:nth-of-type(1) {
     display: grid;
 }
 
@@ -9,8 +21,266 @@ h1 {
 }
 
 
-img:nth-of-type(1) {
+
+main section:nth-of-type(1) {
+    margin: .5em;
+}
+
+main section:nth-of-type(1) h1 {
+    color: var(--color-text);
+}
+
+
+
+main > section:nth-of-type(1) img:nth-of-type(1) {
     width: 100%;
     height: auto;
     grid-row-start: 1; 
 }
+
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+    color: var(--color-text);
+    font-size: .8em;
+    margin: 0;
+}
+
+main section:nth-of-type(1) p:nth-of-type(2) {
+ 
+    color: var(--color-text);
+    font-size: 0.8em;
+    margin: 0;
+}
+
+
+main section:nth-of-type(1) p:nth-of-type(2) > a {
+ 
+    color: var(--accent-color);
+    
+}
+
+main section:nth-of-type(1) > a {
+    background-color: var(--background-color-grijs);
+    color: var(--color-text-white);
+    
+    font-size: 0.8em;
+    padding: 0 1em 0 1em;
+    width: fit-content;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s;
+}
+
+main section:nth-of-type(1) > a:hover {
+    background-color: var(--accent-color);
+    transition: .5s;
+}
+
+main section:nth-of-type(1) p:nth-of-type(3),
+main section:nth-of-type(1) p:nth-of-type(4),
+main section:nth-of-type(1) p:nth-of-type(5),
+main section:nth-of-type(1) p:nth-of-type(6),
+main section:nth-of-type(1) p:nth-of-type(7), 
+main section:nth-of-type(1) p:nth-of-type(8) {
+
+    margin-top: 2em;
+    color: var(--color-text);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+main section:nth-of-type(1) p:nth-of-type(3) a {
+
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+main section:nth-of-type(1) p:nth-of-type(3) a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+
+main section:nth-of-type(1) p:nth-of-type(8) a {
+
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+
+main section:nth-of-type(2) h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-right: .2em;
+    margin-bottom: 0;
+    margin-left: .2em;
+    font-weight: 700;
+}
+
+main section:nth-of-type(2) p:nth-of-type(1) {
+    margin: 1em .2em 1em .5em;
+    font-weight: 600;
+}
+
+main section:nth-of-type(2) p {
+    margin: 0 .2em 0 .5em;
+    font-weight: 300;
+}
+
+
+main section:nth-of-type(3) h2 {
+    font-size: .9em;
+    margin: 1em .2em 0 .5em;
+}
+
+main section:nth-of-type(3) ul {
+    margin: 0;
+    list-style: none;
+    padding: .5em;
+   
+
+}
+
+
+main section:nth-of-type(3) ul li {
+    list-style: none;
+    margin: 0;
+    padding: .2em;
+    font-size: .9em;
+    font-weight: 600;
+
+
+
+}
+
+main section:nth-of-type(3) ul li a {
+
+    color: var(--accent-color);
+
+
+}
+
+main > img {
+
+        width: 100%;
+        height: auto;
+
+}
+
+main > p:nth-of-type(1) {
+color: var(--color-button-grijs);
+filter: brightness(1);
+font-style: italic;
+margin: 0.5em;
+
+}
+
+
+main section:nth-of-type(4) {
+    margin: 2em 0 2em 0;
+    background-color: var(--color-text);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(4) h2 {
+    
+    color: var(--color-text-white);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+main section:nth-of-type(4) p {
+    color: var(--color-text-white);
+    text-align: center;
+    font-weight: 300;
+    margin-top: .5em;
+    font-size: 0.9em;
+}
+
+main section:nth-of-type(4) a {
+    background-color: var(--accent-color-button);
+    color: var(--color-text-white);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .8em 0 .8em 0;
+    font-size: 1.2em;
+    width: 80%;
+    align-self: center;
+}
+
+main section:nth-of-type(5)  {
+
+    color: var(--color-text);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main section:nth-of-type(5) > h2 {
+    grid-column: span 2;
+    align-self: center;
+    justify-self: center;
+
+}
+
+main section:nth-of-type(5) > h2:before {
+    font-family: sans-serif;
+	position: relative;
+	top: -.4em;
+	content: '____';
+	margin-right: .8em;
+	color: lightgray;
+}
+
+
+main section:nth-of-type(5) > h2:after {
+    font-family: sans-serif;
+	position: relative;
+	top: -.4em;
+	content: '____';
+	margin-left: .8em;
+    color: lightgray;
+
+}
+
+
+main section:nth-of-type(5) a {
+    display: grid;
+    justify-self: center;
+    padding: .5em .5em 1em .5em; 
+    font-size: 1.1em;
+
+}
+
+main section:nth-of-type(5) a:hover {
+    color: var(--accent-color);
+    transition: .5s;
+
+
+}
+
+main section:nth-of-type(5) a img {
+    width: 100%;
+    max-width: fit-content;
+    grid-row-start: 1;
+
+}
+
+main section:nth-of-type(5) a h3 {
+   
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+

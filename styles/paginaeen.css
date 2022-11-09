@@ -6,6 +6,21 @@
 /****************/
 
 /* groter dan teken (>) selecteerd direct en het enige kind en dus geen achterkleinkinderen. zonder haakje selecteerd alle (bijvoorbeeld) a elementen in een parent. */
+html {
+
+
+}
+
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-text-white:#fff;
+	--color-background:#fff;
+	--accent-color: #71c2b2;
+	--accent-color-button: #8555c9;
+	--color-button-grijs: #c9c9c9;
+
+}
 
 
 
@@ -28,10 +43,16 @@ main > section:nth-of-type(2) nav {
 
 }
 
+main > section:nth-of-type(2) nav a:hover {
+	font-weight: bold;
+
+}
+
+
 main > section:nth-of-type(2) nav a {
 	color: black;
 	font-size: 1em;
-	font-weight: 900;
+	font-weight: 600;
 	justify-self: center;
 	
 
@@ -39,10 +60,12 @@ main > section:nth-of-type(2) nav a {
 
 
 
-main > section:nth-of-type(2) div {
+main > section:nth-of-type(2) > div {
 	display:flex;
 	overflow-x:hidden;
-	scroll-padding-top: 3em;
+	scroll-behavior: smooth;
+	height: 90vh;
+	
 
 }
 
@@ -50,20 +73,30 @@ main > section:nth-of-type(2) div section {
 	width:100%;
 	flex-shrink:0;
 	padding: 0;
+	display:flex;
+	flex-direction:column;
 }
 
 main > section:nth-of-type(2) div ul {
-	height: 60em;
+
+	flex-grow:1;
 	overflow-y: scroll;
 
 
 }
 
 main > section:nth-of-type(2) div ul img {
+	
 	width:100%;
+	transform: scale(1);
+	transition: 1s;
+	
 }
 
-
+main > section:nth-of-type(2) div ul img:hover  {
+	transform: scale(1.1);
+	transition: 1s;
+}
 
 
 
@@ -76,7 +109,7 @@ main > nav > section:nth-of-type(2) {
 	top: 100%;
 	right: 10%;
 	left: 10%;
-	z-index:100;
+	z-index:65;
 
 
 }
@@ -97,7 +130,7 @@ main > nav > section:nth-of-type(1) {
 	font-weight: bold;
 	font-size: 1em;
 	gap: 2em;
-	z-index:100;
+	z-index:65;
 }
 
 main > nav > section:nth-of-type(1) > button {
@@ -110,17 +143,37 @@ main > nav > section:nth-of-type(1) > button {
 /* css voor de ul section zonder class teogevoegd */
 
 
+main > nav > section:nth-of-type(1) {
+
+	transition: .5s;
+
+
+}
+
+
+main > nav > section:nth-of-type(1):hover {
+
+	background-color: var(--accent-color);
+
+
+}
+
 
 main > nav > section:nth-of-type(1).filterOpen {
 	background-color: var(--color-text);
-	transition: 1s;
-	bottom: 30%;
+	transition: .5s;
+	bottom: 29%;
 	right: 25%;
 	left: 25%;
 	width: 50%;
 	color: var(--color-text-white);
 	border: none;
 	gap: 2em;
+
+}
+
+main > nav > section:nth-of-type(2) {
+	transition: .5s;
 
 }
 
@@ -131,7 +184,7 @@ main > nav > section:nth-of-type(2).filterOpen {
 	position: fixed;
 	padding: 1em;
 	line-height: 1.5em;
-	transition: 1s;
+	transition: .5s;
 	bottom: 0;
 	right: 10%;
 	left: 10%;
@@ -146,6 +199,16 @@ main > nav > section:nth-of-type(2).filterOpen {
 
 }
 
+main > nav > section:nth-of-type(2).filterOpen > ul {
+	padding: .5em;
+}
+
+
+main > nav > section:nth-of-type(2).filterOpen ul li {
+	padding: .5em;
+	font-weight: bold;
+}
+
 
 /* code om de tekst op de eerste afbeelding te krijgen */
 
@@ -156,6 +219,7 @@ main > section:nth-of-type(1) > a {
 	align-items: center;
 	font-size: 2em;
 	background-color: black;
+	transition: 1s;
 	
 	
 }
@@ -173,18 +237,20 @@ main > section:nth-of-type(1) > a > div {
 
 }
 
-main > section:nth-of-type(1) > a > div h2 {
+main > section:nth-of-type(1) > a > div > h2 {
 	
-	font-size: 1em;
+	font-size: 0.8em;
 	text-transform: uppercase;
 	padding: none;
+	font-weight: 800;
+
 
 
 }
 
 main > section:nth-of-type(1) > a > div p {
 	text-transform: capitalize;
-	font-weight: lighter;
+	font-weight: 200;
 	font-size: 0.7em;
 
 }
@@ -196,6 +262,12 @@ main > section:nth-of-type(1) > a > img:only-of-type {
 	opacity: 0.6;
 
 
+}
+
+main > section:nth-of-type(1) > a:hover {
+
+	transform: scale(1.1);
+	transition: 1s;
 }
 
 
@@ -212,14 +284,23 @@ section > ul {
 	padding:0;
 } 
 
-section ul a {
+main > section:nth-of-type(1) ul a,
+main > section:nth-of-type(2) ul a {
 	display: grid;
 	color: var(--color-text);
 }
 
+
+
 section ul li a h3 {
 	padding: 0 1em 1em 1em;
 }
+
+section ul li a:hover {
+	color: var(--accent-color)
+}
+
+
 /* deze regels hierbeneden zorgen dat de h3 onder de afbeelding staat. */
 
 section ul a img {
@@ -228,6 +309,223 @@ section ul a img {
 
 
 
+/* styling voor tab 3 */
+main > section > div > section:nth-of-type(3) header {
+display: grid;
+place-items: center;
+
+}
 
 
+main > section > div > section:nth-of-type(3) header button {
+	width: 90%;
+	padding: .8em;
+	font-size: 1.2em;
+	font-weight: 700;
+	background-color: lightgray;
+	color: var(--color-text-white);
+	text-transform: uppercase;
+	border: none;
+	align-items: center;
+	justify-content: center;
+	margin: 1em;
+
+}
+
+main > section > div > section:nth-of-type(3) header button:hover {
+	background-color: var(--accent-color);
+	transition: .5s;
+}
+
+main > section > div > section:nth-of-type(3) header h2 {
+color: var(--color-text);
+text-transform: uppercase;
+font-weight: 700;
+text-align: center;
+
+
+
+}
+
+main > section > div > section:nth-of-type(3) header h2:before {
+	font-family: sans-serif;
+	position: relative;
+	top: -.4em;
+	content: '____';
+	margin-right: .8em;
+	color: lightgray;
+
+}
+main > section > div > section:nth-of-type(3) header h2:after {
+	font-family: sans-serif;
+	position: relative;
+	top: -.4em;
+	content: '____';
+	margin-left: .8em;
+	color: lightgray;
+}
+
+@media (max-width:400px) {
+	main > section > div > section:nth-of-type(3) header h2:before {
+		content: '__';
+	
+	}
+	main > section > div > section:nth-of-type(3) header h2:after {
+		content: '__';
+	}
+}
+
+
+/* css voor de eerste P van de drie verschillende releases (de datum p) en de where to buy*/
+main section div section ul li:nth-of-type(1) > p:nth-of-type(1),
+main section div section ul li:nth-of-type(2) > p:nth-of-type(1),
+main section div section ul li:nth-of-type(3) > p:nth-of-type(1) {
+
+	font-weight: 600;
+	font-size: 0.8em;
+	margin: 1.5em;
+	color: var(--color-text);
+}
+
+
+/* css voor de h3 van elke release */
+
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(1) section > a > h3:nth-of-type(1),
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(2) section > a > h3:nth-of-type(1),
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(3) section > a > h3:nth-of-type(1) {
+
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: 1.2em;
+	padding: 0 1em .2em 1em;
+
+	
+}
+
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(1) > section > a > div > p:nth-of-type(1),
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(2) > section > a > div > p:nth-of-type(1),
+main > section:nth-of-type(2) div > section:nth-of-type(3) > ul > li:nth-of-type(3) > section > a > div > p:nth-of-type(1) {
+	
+
+	color: var(--color-text);
+	margin: 0 1.5em 0 1.5em;
+	font-size: 0.8em;
+
+	
+}
+
+
+/* css voor de kleur en style code */
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > section > a > div,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > section > a > div,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > section > a > div {
+	display: grid;
+}
+
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > section > a > div > p:nth-of-type(2),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > section > a > div > p:nth-of-type(2),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > section > a > div > p:nth-of-type(2) {
+
+	color: var(--color-text);
+	margin: 0 1.5em 0 1.5em;
+	font-size: 0.8em;
+
+	
+}
+
+
+main > section > div > section:nth-of-type(3) > ul > li:nth-of-type(1) > section > p:nth-of-type(1),
+main > section > div > section:nth-of-type(3) > ul > li:nth-of-type(2) > section > p:nth-of-type(1),
+main > section > div > section:nth-of-type(3) > ul > li:nth-of-type(3) > section > p:nth-of-type(1) {
+
+	color: var(--color-text);
+	margin: 1em;
+	font-size: 0.8em;
+	font-weight: 700;
+
+	
+}
+
+/* knoppen onder de releases  */
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) {
+
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > button,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > button,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > button {
+
+	
+	background-color: var(--accent-color);
+	margin: 0 .5em .5em .5em;
+	color: var(--color-text-white);
+	width: 90%;
+	display: grid;
+	font-size: 0.8em;
+	border: none;
+	padding: .5em;
+	align-self: center;
+
+
+	
+}
+
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > button:hover,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > button:hover,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > button:hover {
+
+filter: contrast(120%);
+
+
+	
+}
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > button img,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > button img,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > button img { 
+
+max-width: 7em;
+justify-self: center;
+
+
+}
+
+
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > button:nth-of-type(5),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > button:nth-of-type(5),
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > button:nth-of-type(5) {
+
+	background-color: var(--color-button-grijs);
+	padding: 1.2em;
+	color: var(--color-text-white);
+	justify-items: center;
+	font-weight: 500;
+	transition: 1s;
+
+	
+}
+
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(1) > button:nth-of-type(5):hover,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(2) > button:nth-of-type(5):hover,
+main > section div > section:nth-of-type(3) > ul > li:nth-of-type(3) > button:nth-of-type(5):hover {
+
+	background-color: var(--accent-color);
+	transition: 1s;
+}
+
+
+main section div section#tab3 ul li:hover {
+
+	color: red;
+}
 
